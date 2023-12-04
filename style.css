@@ -1,0 +1,86 @@
+:root {
+    --brand: #295AD4;
+    --brand-transparent: #295AD400;
+    --brand-light: #b3c2ff;
+    --twist: #E7C424;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.play-store img {
+    width: 15rem;
+}
+
+.transition {
+    overflow: hidden;
+}
+.transition > svg {
+    width: 100%;
+}
+
+header {
+    color: white;
+    background-color: var(--twist);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10rem;
+    padding: 0 2rem;
+}
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+header h1 + p {
+    font-size: 1.3em;
+}
+header > div {
+    margin-top: 5rem;
+    max-width: 30rem;
+}
+
+footer {
+    min-height: 3rem;
+    background-color: var(--brand-light);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.screenshoots {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--brand);
+}
+.screenshoots::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient(180deg, var(--brand-transparent) 0%, var(--brand) 100%);
+}
+.screenshoots > div {
+    display: flex;
+    animation: scroll 25s linear 1s backwards infinite;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-150rem);
+    }
+}
+
+.screenshoots img {
+    width: 30rem;
+}
