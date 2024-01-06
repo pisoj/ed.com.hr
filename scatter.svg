@@ -1,0 +1,27 @@
+<!-- Generated using: https://app.haikei.app/ -->
+<svg id="visual" viewBox="0 0 675 900" width="675" height="900" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <rect width="675" height="900" fill="#295AD4"></rect>
+    <g>
+        <g transform="translate(319 162)">
+            <path
+                d="M95.3 -30.4C109.9 14.2 99 67.6 64 94.5C29.1 121.4 -29.8 121.8 -66.4 94.5C-103 67.2 -117.3 12.2 -102.5 -32.5C-87.7 -77.2 -43.8 -111.6 -1.8 -111C40.3 -110.5 80.6 -74.9 95.3 -30.4Z"
+                stroke="#E7C424" fill="none" stroke-width="30"></path>
+        </g>
+        <g transform="translate(497 485)">
+            <path
+                d="M106.2 -31.9C119.2 5.5 98.6 56.5 62.6 81.5C26.6 106.6 -24.8 105.7 -58.2 81.2C-91.6 56.7 -107 8.4 -94.3 -28.6C-81.6 -65.7 -40.8 -91.5 2.9 -92.5C46.6 -93.4 93.1 -69.4 106.2 -31.9Z"
+                stroke="#E7C424" fill="none" stroke-width="30"></path>
+        </g>
+        <g transform="translate(284 737)">
+            <path
+                d="M87.8 -28.7C100.1 9.3 87 55.5 56.1 78.1C25.2 100.8 -23.5 100 -54.8 76.9C-86.2 53.8 -100.3 8.3 -88.3 -29.4C-76.3 -67.1 -38.1 -97 -0.2 -96.9C37.7 -96.8 75.5 -66.8 87.8 -28.7Z"
+                stroke="#E7C424" fill="none" stroke-width="30"></path>
+        </g>
+        <g transform="translate(96 422)">
+            <path
+                d="M72.8 -20.6C84.2 11.3 76.2 52.6 50.6 71.7C25 90.8 -18.3 87.8 -44.2 67.4C-70.1 47 -78.8 9.3 -68.5 -21.1C-58.2 -51.4 -29.1 -74.5 0.8 -74.8C30.7 -75 61.4 -52.5 72.8 -20.6Z"
+                stroke="#E7C424" fill="none" stroke-width="30"></path>
+        </g>
+    </g>
+</svg>

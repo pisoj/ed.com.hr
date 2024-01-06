@@ -1,86 +1,121 @@
 :root {
-    --brand: #295AD4;
-    --brand-transparent: #295AD400;
-    --brand-light: #b3c2ff;
-    --twist: #E7C424;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --brand: #295ad4;
+  --brand-transparent: #295ad400;
+  --brand-light: #b3c2ff;
+  --twist: #e7c424;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+}
+a {
+  color: var(--brand-light);
 }
 
 .play-store img {
-    width: 15rem;
+  width: 15rem;
 }
 
 .transition {
-    overflow: hidden;
+  overflow: hidden;
 }
 .transition > svg {
-    width: 100%;
+  width: 100%;
 }
 
 header {
-    color: white;
-    background-color: var(--twist);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 10rem;
-    padding: 0 2rem;
+  background-color: var(--twist);
+  color: white;
 }
-header h1 {
-    font-size: 3em;
-    margin: 0;
+.article {
+  background-color: var(--brand);
+  background-image: linear-gradient(
+      hsla(223, 68%, 50%, 0.5),
+      hsla(223, 68%, 50%, 0.5)
+    ),
+    url("scatter.svg");
+  background-repeat: repeat-y;
+  background-size: 100% 50%;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article > div {
+  max-width: 120ch;
+  padding: 2rem;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.header h1 {
+  font-size: 3em;
+  margin: 0;
 }
 header h1 + p {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
-header > div {
-    margin-top: 5rem;
-    max-width: 30rem;
+.header > div {
+  margin-top: 5rem;
+  max-width: 30rem;
 }
 
 footer {
-    min-height: 3rem;
-    background-color: var(--brand-light);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    text-align: center;
+  min-height: 3rem;
+  background-color: var(--brand-light);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .screenshoots {
-    position: relative;
-    overflow: hidden;
-    background-color: var(--brand);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--brand);
 }
 .screenshoots::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 10rem;
-    width: 100%;
-    background: linear-gradient(180deg, var(--brand-transparent) 0%, var(--brand) 100%);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 10rem;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--brand-transparent) 0%,
+    var(--brand) 100%
+  );
 }
 .screenshoots > div {
-    display: flex;
-    animation: scroll 25s linear 1s backwards infinite;
+  display: flex;
+  animation: scroll 25s linear 1s backwards infinite;
+}
+.beta-screenshoots {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.beta-screenshoots img {
+  max-width: max(20rem, calc(100% / 4));
 }
 
 @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-150rem);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-150rem);
+  }
 }
 
 .screenshoots img {
-    width: 30rem;
+  width: 30rem;
 }

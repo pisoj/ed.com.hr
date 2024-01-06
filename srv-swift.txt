@@ -1,0 +1,24 @@
+.
+├── Dockerfile
+├── Package.resolved
+├── Package.swift
+├── Public
+├── Resources
+│   └── Views
+│       ├── index.leaf
+│       └── login.leaf
+├── Sources
+│   └── App
+│       ├── Controllers
+│       ├── Fetcher.swift
+│       ├── HTMLDecoder.swift
+│       ├── Scraper.swift
+│       ├── configure.swift
+│       ├── entrypoint.swift
+│       └── routes.swift
+├── Tests
+│   └── AppTests
+│       └── AppTests.swift
+└── docker-compose.yml
+
+9 directories, 13 files, 761 MB

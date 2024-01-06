@@ -1,0 +1,31 @@
+.
+├── bigtest.go
+├── database
+│   ├── database.go
+│   ├── pubsub-subscription.go
+│   └── users.go
+├── di
+│   └── di.go
+├── go.mod
+├── go.sum
+├── gqlgen.yml
+├── graph
+│   ├── float32.go
+│   ├── generated.go
+│   ├── model
+│   ├── resolver.go
+│   ├── schema.graphqls
+│   └── schema.resolvers.go
+├── main.go
+├── safemap
+│   └── safemap.go
+├── schoolyearparser.go
+├── scraper
+│   ├── scraper.go
+│   └── utils.go
+├── server.go
+├── tools.go
+└── utils
+    └── utils.go
+
+8 directories, 21 files, 544 KB

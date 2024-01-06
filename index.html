@@ -1,45 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>eDnevnik Super</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>eDnevnik Super - Počivao u miru</title>
+  </head>
+  <body>
     <header>
+      <div class="header">
         <div>
-            <h1>eDnevnik Super</h1>
-            <p>Računanje prosjeka. Spremanje računa. Pregledniji izostanci.</p>
+          <h1>eDnevnik Super</h1>
+          <p>Računanje prosjeka. Spremanje računa. Pregledniji izostanci.</p>
         </div>
         <div>
-            <!-- Generated using: https://play.google.com/intl/en_us/badges/ -->
-            <a class="play-store" href='https://play.google.com/store/apps/details?id=xyz.pisoj.ed_super&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Dostupno na usluzi Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/hr_badge_web_generic.png'/></a>
+          <!-- Generated using: https://play.google.com/intl/en_us/badges/ -->
+          <a
+            class="play-store"
+            href="https://play.google.com/store/apps/details?id=xyz.pisoj.ed_super&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            ><img
+              alt="Dostupno na usluzi Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/hr_badge_web_generic.png"
+          /></a>
         </div>
+      </div>
     </header>
-    <div class="transition" style="background-color: var(--brand);">
-        <!-- Generated using: https://app.haikei.app/ -->
-        <svg preserveAspectRatio="none" viewBox="0 0 900 400" width="900" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="400" fill="#E7C424"></rect><path d="M0 115L113 128L225 85L338 176L450 152L563 150L675 172L788 96L900 172L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z" fill="#b3c2ff"></path><path d="M0 214L113 155L225 203L338 227L450 115L563 154L675 132L788 175L900 224L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z" fill="#9badf7"></path><path d="M0 189L113 168L225 220L338 169L450 166L563 185L675 174L788 253L900 228L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z" fill="#8297ef"></path><path d="M0 284L113 220L225 230L338 237L450 226L563 261L675 232L788 214L900 247L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z" fill="#6983e7"></path><path d="M0 275L113 322L225 331L338 269L450 314L563 282L675 320L788 286L900 276L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z" fill="#4d6ede"></path><path d="M0 363L113 354L225 317L338 345L450 363L563 350L675 314L788 331L900 370L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z" fill="#295ad4"></path></svg>
+    <div class="transition" style="background-color: var(--brand)">
+      <!-- Generated using: https://app.haikei.app/ -->
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 900 400"
+        width="900"
+        height="400"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <rect x="0" y="0" width="900" height="400" fill="#E7C424"></rect>
+        <path
+          d="M0 115L113 128L225 85L338 176L450 152L563 150L675 172L788 96L900 172L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z"
+          fill="#b3c2ff"
+        ></path>
+        <path
+          d="M0 214L113 155L225 203L338 227L450 115L563 154L675 132L788 175L900 224L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z"
+          fill="#9badf7"
+        ></path>
+        <path
+          d="M0 189L113 168L225 220L338 169L450 166L563 185L675 174L788 253L900 228L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z"
+          fill="#8297ef"
+        ></path>
+        <path
+          d="M0 284L113 220L225 230L338 237L450 226L563 261L675 232L788 214L900 247L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z"
+          fill="#6983e7"
+        ></path>
+        <path
+          d="M0 275L113 322L225 331L338 269L450 314L563 282L675 320L788 286L900 276L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z"
+          fill="#4d6ede"
+        ></path>
+        <path
+          d="M0 363L113 354L225 317L338 345L450 363L563 350L675 314L788 331L900 370L900 401L788 401L675 401L563 401L450 401L338 401L225 401L113 401L0 401Z"
+          fill="#295ad4"
+        ></path>
+      </svg>
+    </div>
+    <div class="article">
+      <div>
+        <h1>eDnevnik Super na respiratorima</h1>
+        <h2>Počivao u miru eDnevnik Super, moj najveći projekt dosad</h2>
+        <p>
+          7. Siječnja 2023. izašla jest prva verzija eDnevnika Super, aplikacije
+          koju sam napisao kako bih sam sebi olakšao računanje prosjeka, iz
+          zabave. Predvidio sam da će ju preuzeti mnogo ljudi s obzirom da ne
+          postoji slična aplikacija za Android™ telefone. Bilo mi je drago
+          vidjeti koliko ljudi je preuzlo nešto što sam napravio te sam dobio
+          volju za daljnjim unaprjeđivanjem. Kako je više ljudi preuzelo
+          aplikaciju počeo sam više paziti na funkcionalnost, htio sam da svaka
+          funkcija ima svoju svrhu te da bude kvalitetno implementirana. Vodio
+          sam se onime što je meni osobno smetalo kod e-Dnevnika i u čemu sam
+          vidio potencijal za poboljšanje. Također sam pazio na kompatibilnost
+          sa starijim uređajima (jer sam i ja jedan od onih koji nedaju svoj
+          telefon do zadnjeg daha).
+        </p>
+        <p>
+          Aplikacija JE radila (više ne radi, više u nastavku) na principu da
+          prikazuje standardni e-Dnevnik, no također izvršava Typescriptu koja
+          prilagođava sučelje e-Dnevnika. Tijekom školske godine 2022./2023.
+          koko travnja počeo je rasti interes za aplikacijom te sam se zbog toga
+          suzdržavao od objavljivanja bilokakvih nadogradnji nebili nešto
+          pokvario. Nisam puno radio na aplikaciji niti tijekom ljetnih
+          praznika, to su praznici, treba se odmoriti. Kada sam se vratio u
+          školu krenuo sam nadograđivati aplikaciju, moji su planovi bili
+          sljedeći:
+        </p>
+        <ul>
+          <li>
+            Uvesti server (s nadom da će biti pod velikim opterećenjem da imam
+            izgovor za kupnjom novog kompjutera)
+          </li>
+          <li>Ušminkati zaslon za prijavu</li>
+          <li>
+            Uvesti slanje obavijesti o novim ocjenama, ispitima te izostancima
+          </li>
+          <li>
+            Možda se jednog dana rješiti WebView-a (mrzim Typescript, Kotlin je
+            bolji) te učiniti aplikaciju potpuno nativnom
+          </li>
+        </ul>
+        <p>
+          Sve se odužilo jer nisam uvijek imao volje, a niti vremena za rad na
+          aplikaciji. Ono što je zaista zanimljivo jest kako sam server prvo
+          napisao u typescripti misleći kako će biti lakše izvući podatke iz
+          HTML-a znajući kako je to jednostavno u preglednika. Kasnije sam
+          shvation da mrzim typescript sintaksu stoga sam prešao na Kotlin
+          misleći kako je dobra ideja imati i aplikaciju i server u istom jeziku
+          radi lakšeg snalaženja. Zatim sam dobio želju da naučim novi
+          programski jezik. Iz nekog sam glupog razloga misleći kako je sličan
+          Kotlinu, no brže se kompajlira odabra Swift. Jedna riječ:
+          <a
+            href="https://pisoj.medium.com/dont-use-swift-on-backend-d48788636783"
+            >pogrešna odluka</a
+          >
+          (znam da su to dvije riječi). To me potaknulo da još jednom sve
+          ponovim, ali u Go-u. Odlična odluka! Za bazu podataka odabrao sam
+          MongoDB, jer mi se činila idealnom za spremanje jednostavnih podataka
+          kao što su uređaji na koje je korisnik prijavljen (potrebno za slanje
+          obavijesti o novim ocjenama), a moguće ju je pokrenuti i na vlastitom
+          računalu, CPU mora podržavati AVX, e pa MOJ to NE podržava (Bez brige,
+          ocjene, e-meail adrese korisnika kao i lozinke nisam nikda niti
+          pokušao bilježiti). Unatoč svim problemima server koji čini podatke iz
+          e-Dnevnika dostupnima preko GraphQL API-ja je GOTOV.
+        </p>
+        <h3>Propast</h3>
+        <p>
+          Nažalost, frontend dio aplikacije nikada nisam završio, zažto? Stvarno
+          želiš znati? Jesi li 100% siguran? - Zato! A sad pravi razlog...
+          Krenuo sam raditi na aplikaciji s pretpostavkom da će sljedećih pet
+          godina e-Dnevnik ostati isti. <strong>KRIVO</strong>! U petak
+          5.1.202<b>4</b>. e-Dnevnik uvodi redizajn i prosjek, doduše, struktura
+          HTML-a je ostala većinom ista. Moja aplikacija nije bila samo
+          kalkulator prosjeka, imao sam veće planove, no prosjek je bio ono što
+          je ljude privlačilo da preuzmu aplikaciju te istraže sve njene
+          mogućnosti. Nakon tog redizajna izgubio sam volju za bilo kakvim
+          daljnim radom nad ovim projektom: e-Dnevnik je postao fensi-šmensi
+          ušminkan s puno grafova, prosjekom i animacijama od kojih se mom
+          komputeru vrti u grafičkoj. Bilo je tu puno manje toga za
+          unaprijediti, a vešte toga za dostići što je potpuno suprotno od mojeg
+          početnog cilja. Odlučio sam se ne utrkivati do cilja koji se kreće 1km
+          u 5 godina motorom od 947 konjskih snaga koji radi na esenciju
+          didušikovog tetraoksida i odiše mirisom sumporne kiseline, to je
+          prebrzo za mene.
+        </p>
+        <p>
+          U slučaju da itko želi baciti oko na izvorni kod. NEMOŽE! No ne zato
+          jer sam zao ili zato što me sram nego zato što nisam dobro podesio git
+          i bojim se da bi mi neki API ključ mogao pobjeći. Ipak, za sve one
+          znatiželjne ostavljam strukturu projekta:
+        </p>
+        <ul>
+          <li><a href="ed-super.txt">Android aplikacija</a></li>
+          <li>
+            Server:
+            <ul>
+              <li>
+                <a href="srv-ts.txt">Typescript verzija (prva pomoć)</a>
+              </li>
+              <li><a href="srv-kotlin.txt">Kotlin verzija (polovično)</a></li>
+              <li><a href="srv-swift.txt">Swift verzija (započeto)</a></li>
+              <li><a href="srv-go.txta">Go verzija (gotovo!)</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          Iako se ispod nalaze snimke zaslona zadnje javno izdane verzije
+          aplikacije (2.0.0-rc.1), priložit ću i snimke zaslone zadnje beta
+          verzije 3.0.0-beta.4
+        </p>
+        <p>
+          Josip Tišljar Mataušić (14 godina)
+          <br />
+          6.1.2024.
+        </p>
+      </div>
+    </div>
+    <div class="transition" style="background-color: #fffbff">
+      <!-- Generated using: https://app.haikei.app/ -->
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 900 450"
+        width="900"
+        height="450"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <path
+          d="M0 87L82 87L82 100L164 100L164 177L245 177L245 213L327 213L327 163L409 163L409 172L491 172L491 141L573 141L573 118L655 118L655 69L736 69L736 163L818 163L818 199L900 199L900 132L900 0L900 0L818 0L818 0L736 0L736 0L655 0L655 0L573 0L573 0L491 0L491 0L409 0L409 0L327 0L327 0L245 0L245 0L164 0L164 0L82 0L82 0L0 0Z"
+          fill="#295ad4"
+        ></path>
+        <path
+          d="M0 190L82 190L82 181L164 181L164 244L245 244L245 253L327 253L327 208L409 208L409 208L491 208L491 217L573 217L573 181L655 181L655 177L736 177L736 226L818 226L818 249L900 249L900 235L900 130L900 197L818 197L818 161L736 161L736 67L655 67L655 116L573 116L573 139L491 139L491 170L409 170L409 161L327 161L327 211L245 211L245 175L164 175L164 98L82 98L82 85L0 85Z"
+          fill="#7480e0"
+        ></path>
+        <path
+          d="M0 244L82 244L82 249L164 249L164 316L245 316L245 303L327 303L327 253L409 253L409 298L491 298L491 307L573 307L573 262L655 262L655 244L736 244L736 280L818 280L818 307L900 307L900 316L900 233L900 247L818 247L818 224L736 224L736 175L655 175L655 179L573 179L573 215L491 215L491 206L409 206L409 206L327 206L327 251L245 251L245 242L164 242L164 179L82 179L82 188L0 188Z"
+          fill="#a7a8eb"
+        ></path>
+        <path
+          d="M0 397L82 397L82 384L164 384L164 406L245 406L245 397L327 397L327 411L409 411L409 397L491 397L491 388L573 388L573 393L655 393L655 379L736 379L736 393L818 393L818 406L900 406L900 411L900 314L900 305L818 305L818 278L736 278L736 242L655 242L655 260L573 260L573 305L491 305L491 296L409 296L409 251L327 251L327 301L245 301L245 314L164 314L164 247L82 247L82 242L0 242Z"
+          fill="#d4d3f5"
+        ></path>
+        <path
+          d="M0 451L82 451L82 451L164 451L164 451L245 451L245 451L327 451L327 451L409 451L409 451L491 451L491 451L573 451L573 451L655 451L655 451L736 451L736 451L818 451L818 451L900 451L900 451L900 409L900 404L818 404L818 391L736 391L736 377L655 377L655 391L573 391L573 386L491 386L491 395L409 395L409 409L327 409L327 395L245 395L245 404L164 404L164 382L82 382L82 395L0 395Z"
+          fill="#fffbff"
+        ></path>
+      </svg>
+    </div>
+    <div class="beta-screenshoots">
+      <img src="beta-img/welcome.png" />
+      <img src="beta-img/settings.png" />
+      <img src="beta-img/login.png" />
+      <img src="beta-img/about.png" />
+    </div>
+    <div class="transition" style="background-color: var(--brand)">
+      <!-- Generated using: https://app.haikei.app/ -->
+      <?xml version="1.0" encoding="UTF-8"?>
+      <!-- Generated by Pixelmator Pro 2.4.3 -->
+      <svg
+        preserveAspectRatio="none"
+        width="900"
+        height="150"
+        viewBox="0 0 900 150"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="background-color: #fffbff"
+      >
+        <path
+          fill="var(--brand)"
+          stroke="none"
+          d="M 0 41 L 129 18 L 257 73 L 386 76 L 514 57 L 643 42 L 771 63 L 900 0 L 900 151 L 771 151 L 643 151 L 514 151 L 386 151 L 257 151 L 129 151 L 0 151 Z"
+        />
+      </svg>
     </div>
     <div class="screenshoots">
-        <div>
-            <img src="img/average.png">
-            <img src="img/account.png">
-            <img src="img/overall_success.png">
-            <img src="img/absent.png">
-            <img src="img/theme.png">
+      <div>
+        <img src="img/average.png" />
+        <img src="img/account.png" />
+        <img src="img/overall_success.png" />
+        <img src="img/absent.png" />
+        <img src="img/theme.png" />
 
-            <img src="img/average.png">
-            <img src="img/account.png">
-            <img src="img/overall_success.png">
-        </div>
+        <img src="img/average.png" />
+        <img src="img/account.png" />
+        <img src="img/overall_success.png" />
+      </div>
     </div>
-    <div class="transition" style="background-color: var(--brand-light);">
-        <!-- Generated using: https://app.haikei.app/ -->
-        <svg preserveAspectRatio="none" viewBox="0 0 900 300" width="900" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 34L64 22L129 31L193 22L257 34L321 37L386 46L450 34L514 31L579 43L643 58L707 34L771 22L836 22L900 46L900 0L836 0L771 0L707 0L643 0L579 0L514 0L450 0L386 0L321 0L257 0L193 0L129 0L64 0L0 0Z" fill="#295ad4"></path><path d="M0 88L64 88L129 73L193 85L257 115L321 103L386 127L450 130L514 76L579 142L643 100L707 106L771 112L836 55L900 121L900 44L836 20L771 20L707 32L643 56L579 41L514 29L450 32L386 44L321 35L257 32L193 20L129 29L64 20L0 32Z" fill="#4d6ede"></path><path d="M0 112L64 145L129 148L193 145L257 166L321 169L386 160L450 184L514 118L579 223L643 157L707 166L771 172L836 103L900 175L900 119L836 53L771 110L707 104L643 98L579 140L514 74L450 128L386 125L321 101L257 113L193 83L129 71L64 86L0 86Z" fill="#6983e7"></path><path d="M0 142L64 175L129 169L193 190L257 217L321 208L386 184L450 196L514 157L579 235L643 208L707 196L771 187L836 148L900 190L900 173L836 101L771 170L707 164L643 155L579 221L514 116L450 182L386 158L321 167L257 164L193 143L129 146L64 143L0 110Z" fill="#8297ef"></path><path d="M0 274L64 259L129 259L193 268L257 289L321 265L386 271L450 286L514 277L579 271L643 280L707 259L771 268L836 256L900 259L900 188L836 146L771 185L707 194L643 206L579 233L514 155L450 194L386 182L321 206L257 215L193 188L129 167L64 173L0 140Z" fill="#9badf7"></path><path d="M0 301L64 301L129 301L193 301L257 301L321 301L386 301L450 301L514 301L579 301L643 301L707 301L771 301L836 301L900 301L900 257L836 254L771 266L707 257L643 278L579 269L514 275L450 284L386 269L321 263L257 287L193 266L129 257L64 257L0 272Z" fill="#b3c2ff"></path></svg>
+    <div class="transition" style="background-color: var(--brand-light)">
+      <!-- Generated using: https://app.haikei.app/ -->
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 900 300"
+        width="900"
+        height="300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <path
+          d="M0 34L64 22L129 31L193 22L257 34L321 37L386 46L450 34L514 31L579 43L643 58L707 34L771 22L836 22L900 46L900 0L836 0L771 0L707 0L643 0L579 0L514 0L450 0L386 0L321 0L257 0L193 0L129 0L64 0L0 0Z"
+          fill="#295ad4"
+        ></path>
+        <path
+          d="M0 88L64 88L129 73L193 85L257 115L321 103L386 127L450 130L514 76L579 142L643 100L707 106L771 112L836 55L900 121L900 44L836 20L771 20L707 32L643 56L579 41L514 29L450 32L386 44L321 35L257 32L193 20L129 29L64 20L0 32Z"
+          fill="#4d6ede"
+        ></path>
+        <path
+          d="M0 112L64 145L129 148L193 145L257 166L321 169L386 160L450 184L514 118L579 223L643 157L707 166L771 172L836 103L900 175L900 119L836 53L771 110L707 104L643 98L579 140L514 74L450 128L386 125L321 101L257 113L193 83L129 71L64 86L0 86Z"
+          fill="#6983e7"
+        ></path>
+        <path
+          d="M0 142L64 175L129 169L193 190L257 217L321 208L386 184L450 196L514 157L579 235L643 208L707 196L771 187L836 148L900 190L900 173L836 101L771 170L707 164L643 155L579 221L514 116L450 182L386 158L321 167L257 164L193 143L129 146L64 143L0 110Z"
+          fill="#8297ef"
+        ></path>
+        <path
+          d="M0 274L64 259L129 259L193 268L257 289L321 265L386 271L450 286L514 277L579 271L643 280L707 259L771 268L836 256L900 259L900 188L836 146L771 185L707 194L643 206L579 233L514 155L450 194L386 182L321 206L257 215L193 188L129 167L64 173L0 140Z"
+          fill="#9badf7"
+        ></path>
+        <path
+          d="M0 301L64 301L129 301L193 301L257 301L321 301L386 301L450 301L514 301L579 301L643 301L707 301L771 301L836 301L900 301L900 257L836 254L771 266L707 257L643 278L579 269L514 275L450 284L386 269L321 263L257 287L193 266L129 257L64 257L0 272Z"
+          fill="#b3c2ff"
+        ></path>
+      </svg>
     </div>
     <footer>
-        <p>Google Play i logotip Google Playa zaštitni su znaci tvrtke Google LLC.</p>
+      <p>
+        Android is a trademark of Google LLC. <br />
+        Google Play i logotip Google Playa zaštitni su znaci tvrtke Google LLC.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

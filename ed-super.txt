@@ -1,0 +1,367 @@
+.
+├── app
+│   ├── build.gradle.kts
+│   ├── google-services.json
+│   ├── libs
+│   ├── proguard-rules.pro
+│   ├── release
+│   │   ├── 1.aab
+│   │   ├── 2.0.0-alpha.1.aab
+│   │   ├── 2.0.0-rc.1.aab
+│   │   ├── 2.0.0.-alpha.2.aab
+│   │   ├── 2.aab
+│   │   ├── 3.0.0-beta.1.aab
+│   │   ├── 3.0.0-beta.2.aab
+│   │   ├── 3.0.0-beta.3--prepare_billing+go_server.aab
+│   │   ├── 3.0.0-beta.3.aab
+│   │   └── output-metadata.json
+│   └── src
+│       ├── androidTest
+│       │   └── java
+│       │       └── xyz
+│       │           └── pisoj
+│       │               └── ed_super
+│       │                   └── ExampleInstrumentedTest.kt
+│       └── main
+│           ├── AndroidManifest.xml
+│           ├── graphql
+│           │   ├── Login.graphql
+│           │   ├── Schema.graphqls
+│           │   └── Subscribe.graphql
+│           ├── java
+│           │   └── xyz
+│           │       └── pisoj
+│           │           └── ed_super
+│           │               ├── Constants.kt
+│           │               ├── MainActivity.kt
+│           │               ├── MyApplication.kt
+│           │               ├── account
+│           │               │   └── data
+│           │               │       ├── Authenticator.kt
+│           │               │       └── AuthenticatorService.kt
+│           │               ├── data
+│           │               │   ├── data_source
+│           │               │   │   ├── AccountDataSourceImpl.kt
+│           │               │   │   ├── Global.kt
+│           │               │   │   └── UnreadGradesDataSourceImpl.kt
+│           │               │   └── repository
+│           │               │       ├── AccountRepositoryImpl.kt
+│           │               │       └── UnreadGradesRepositoryImpl.kt
+│           │               ├── di
+│           │               │   ├── ActivityRetainedModule.kt
+│           │               │   └── AppModule.kt
+│           │               ├── domain
+│           │               │   ├── data_source
+│           │               │   │   ├── AccountDataSource.kt
+│           │               │   │   └── UnreadGradesDataSource.kt
+│           │               │   ├── model
+│           │               │   │   ├── Account.kt
+│           │               │   │   ├── FakeAccount.kt
+│           │               │   │   └── NewGrade.kt
+│           │               │   ├── repository
+│           │               │   │   ├── AccountRepository.kt
+│           │               │   │   └── UnreadGradesRepository.kt
+│           │               │   └── utils
+│           │               │       └── sha256.kt
+│           │               ├── exceptions
+│           │               │   ├── EdnevnikException.kt
+│           │               │   └── InvalidCredentialsException.kt
+│           │               ├── presentation
+│           │               │   ├── ComposeActivity.kt
+│           │               │   ├── FirebaseMessagingServiceImpl.kt
+│           │               │   ├── account
+│           │               │   │   ├── AccountScreen.kt
+│           │               │   │   ├── AccountViewModel.kt
+│           │               │   │   ├── LoginForm.kt
+│           │               │   │   ├── LoginFormVariant.kt
+│           │               │   │   └── WelcomeLoginScreen.kt
+│           │               │   ├── billing
+│           │               │   │   ├── AcknowledgeSubscription.kt
+│           │               │   │   └── BillingManager.kt
+│           │               │   ├── common
+│           │               │   │   ├── ComposeViewSideSheetDialog.kt
+│           │               │   │   ├── ObserveEvent.kt
+│           │               │   │   ├── TextFieldState.kt
+│           │               │   │   ├── UiText.kt
+│           │               │   │   ├── getDrawableForGrade.kt
+│           │               │   │   └── windowInfo.kt
+│           │               │   ├── new_grades
+│           │               │   │   ├── UnreadGradesScreen.kt
+│           │               │   │   └── UnreadGradesViewModel.kt
+│           │               │   ├── settings
+│           │               │   │   ├── PreferenceBanner.kt
+│           │               │   │   ├── SettingsActivity.kt
+│           │               │   │   └── SettingsViewModel.kt
+│           │               │   ├── theme
+│           │               │   │   ├── Color.kt
+│           │               │   │   ├── Theme.kt
+│           │               │   │   └── Type.kt
+│           │               │   └── utils
+│           │               │       ├── Bitmap.kt
+│           │               │       ├── NotificationPermissionUtil.kt
+│           │               │       └── NotificationUtil.kt
+│           │               └── webview
+│           │                   └── data
+│           │                       ├── MyWebChromeClient.kt
+│           │                       └── MyWebViewClient.kt
+│           └── res
+│               ├── drawable
+│               │   ├── banner.webp
+│               │   ├── grade_1.xml
+│               │   ├── grade_2.xml
+│               │   ├── grade_3.xml
+│               │   ├── grade_4.xml
+│               │   ├── grade_5.xml
+│               │   ├── ic_back.xml
+│               │   ├── ic_ed.xml
+│               │   ├── ic_error_outlined.xml
+│               │   ├── ic_grade.xml
+│               │   ├── ic_info.xml
+│               │   ├── ic_launcher_foreground.xml
+│               │   ├── ic_launcher_monochrome.xml
+│               │   ├── kutomjer.xml
+│               │   ├── olovka.xml
+│               │   ├── sto_posto.xml
+│               │   ├── tikvica.xml
+│               │   └── trokut.xml
+│               ├── drawable-v24
+│               ├── layout
+│               │   ├── activity_main.xml
+│               │   ├── activity_settings.xml
+│               │   ├── preference_banner.xml
+│               │   └── preference_material_switch.xml
+│               ├── layout-h480dp
+│               ├── layout-w600dp
+│               ├── layout-w840dp
+│               ├── layout-w840dp-h480dp
+│               ├── mipmap-anydpi-v26
+│               │   ├── ic_launcher.xml
+│               │   └── ic_launcher_round.xml
+│               ├── mipmap-hdpi
+│               │   ├── ic_launcher.png
+│               │   └── ic_launcher_round.png
+│               ├── mipmap-mdpi
+│               │   ├── ic_launcher.png
+│               │   └── ic_launcher_round.png
+│               ├── mipmap-xhdpi
+│               │   ├── ic_launcher.png
+│               │   └── ic_launcher_round.png
+│               ├── mipmap-xxhdpi
+│               │   ├── ic_launcher.png
+│               │   └── ic_launcher_round.png
+│               ├── mipmap-xxxhdpi
+│               │   ├── ic_launcher.png
+│               │   └── ic_launcher_round.png
+│               ├── raw
+│               │   ├── app.js
+│               │   └── error_host_lookup.html
+│               ├── values
+│               │   ├── colors.xml
+│               │   ├── ic_app_background.xml
+│               │   ├── ic_launcher_background.xml
+│               │   ├── strings.xml
+│               │   └── themes.xml
+│               ├── values-night
+│               │   ├── colors.xml
+│               │   └── themes.xml
+│               ├── values-v29
+│               │   └── themes.xml
+│               └── xml
+│                   ├── authenticator.xml
+│                   ├── backup_rules.xml
+│                   ├── data_extraction_rules.xml
+│                   ├── network_security_config.xml
+│                   └── settings_preferences.xml
+├── build
+│   ├── generated
+│   │   └── checks
+│   │       └── apollo
+│   │           └── service
+│   │               └── duplicatesCheck
+│   ├── kotlin
+│   │   └── sessions
+│   └── reports
+│       └── configuration-cache
+│           ├── 2cpn8si63djhl7j5aqptqomjh
+│           │   ├── 26m9u7uhc00dx325uy0hv3jgg
+│           │   │   └── configuration-cache-report.html
+│           │   └── 7e74g2c803frzgzhd0who3gtc
+│           │       └── configuration-cache-report.html
+│           ├── 2gp1or17hble9u4emgbbbetto
+│           │   └── 6tuyvpzr937hnt9u38wr3iemt
+│           │       └── configuration-cache-report.html
+│           ├── 2uudtdy44mf5h61mib47xieo2
+│           │   ├── amn0y4la8sn5s2c78vogqv8ir
+│           │   │   └── configuration-cache-report.html
+│           │   └── e9m2h7itlovx8cxndkh6od3td
+│           │       └── configuration-cache-report.html
+│           ├── 33tukenl15naxtewz1l0reuky
+│           │   └── b53d7z40zukjm9oc0umyuvmra
+│           │       └── configuration-cache-report.html
+│           ├── 36n3u1x91951mazgnbb3qdkqq
+│           │   └── cdlw6l0t8ylf45ctxd1rff4r4
+│           │       └── configuration-cache-report.html
+│           ├── 3o2g4cba540uwb7owp3sgx2w1
+│           │   ├── 3h9xddiu78f77bxnedebsn3bx
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 3jripztftmm6o0jrvbfs4nook
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 5h8l29actswmf4tyeay0nmfz1
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 5n7lub2tdnugy7j07uwuy7ews
+│           │   │   └── configuration-cache-report.html
+│           │   └── 6z82vl4du4k9pkeg0em3wemwe
+│           │       └── configuration-cache-report.html
+│           ├── 3o7tq6zetwpo7i4k8ghtmf9p3
+│           │   ├── 11lpptlnezf9rlrtajm1bepik
+│           │   │   └── configuration-cache-report.html
+│           │   └── 992h718vbsf9usp8v7ormv9si
+│           │       └── configuration-cache-report.html
+│           ├── 3zppp88xdkw3c61bdzhv87sri
+│           │   └── 5dwyuyw7gf74srrfxsb774y94
+│           │       └── configuration-cache-report.html
+│           ├── 4awdvu1on1vhamj06ptjxdo51
+│           │   └── 1lfzt3hia8n85x0w5nmc937pw
+│           │       └── configuration-cache-report.html
+│           ├── 4cxq0fryjnvzqdjx360226s5c
+│           │   └── efdhs1a4sfhlpc7hhm3cle5wv
+│           │       └── configuration-cache-report.html
+│           ├── 4t4jljsgbtrh9x33ww19vilue
+│           │   ├── 2pb3rzu7ua5rzt6zai5ddcw1l
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 4r76wthjcif1zeksujhtuf7dg
+│           │   │   └── configuration-cache-report.html
+│           │   ├── az4ey6pefdxy6l7cvnwnc87sn
+│           │   │   └── configuration-cache-report.html
+│           │   ├── b2p5jeh4awa3uzx7ipzfovzxp
+│           │   │   └── configuration-cache-report.html
+│           │   └── dknb6905wbzh4xvo1k88319wp
+│           │       └── configuration-cache-report.html
+│           ├── 5uv9yum0asknq421idfof0cq9
+│           │   └── 2gpvtiq5nwl3c3larjhnv7k7u
+│           │       └── configuration-cache-report.html
+│           ├── 6hm5amkgwyio7nzckq37r46mp
+│           │   └── 2zvy4ukhnklgxxk0kmga1mfig
+│           │       └── configuration-cache-report.html
+│           ├── 7nt5njfhy57bquaf8t6jjb6p4
+│           │   └── bdxb2oh4kpvhuqfs23j57zjh5
+│           │       └── configuration-cache-report.html
+│           ├── 7vem1cslyaystis7fox9xkmni
+│           │   └── 48q7icti3ypufcxru9c4pa5ju
+│           │       └── configuration-cache-report.html
+│           ├── 8ckjdeh25w7dpd9d4bonuglxk
+│           │   └── 4c7i0vrupyrk11jhcryzvhtrr
+│           │       └── configuration-cache-report.html
+│           ├── 8dsuug78ailcllra9rmxou69t
+│           │   ├── 9n6mzvn7ka01sptuedyriscyn
+│           │   │   └── configuration-cache-report.html
+│           │   └── aiv1axjf9aefz255nyfufd02u
+│           │       └── configuration-cache-report.html
+│           ├── 8e4w8mcnkiolk9x6ah6d9i7ar
+│           │   └── 5tfaw3oppyce8i1cdfeav2i42
+│           │       └── configuration-cache-report.html
+│           ├── 8jn7dnb89js3q8vf6gkwoc5oy
+│           │   └── anay9r3cabotanx2a1d103tp6
+│           │       └── configuration-cache-report.html
+│           ├── 9hfhjl93z61n7t22g6pvkjthh
+│           │   ├── au4c2l0c85m02maiftddpxcj0
+│           │   │   └── configuration-cache-report.html
+│           │   └── dno9n6xs4kne9kt5tcwcz0c2r
+│           │       └── configuration-cache-report.html
+│           ├── 9i266m7zj7l0vhd2ltgizwcc7
+│           │   ├── 1cxrrspliys5l2klh34mrqv69
+│           │   │   └── configuration-cache-report.html
+│           │   └── cullgw9nrmap9qx9bw5bwu2tt
+│           │       └── configuration-cache-report.html
+│           ├── 9thoxfby8pq0p6ym9s4av3dq
+│           │   └── b53d7z40zukjm9oc0umyuvmra
+│           │       └── configuration-cache-report.html
+│           ├── 9x0d4hvybypjfgigs8kkhg5ya
+│           │   ├── 3ej4sy07eaktr9ablw75ixno2
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 4oo6501601dm77hxfkis6wwp1
+│           │   │   └── configuration-cache-report.html
+│           │   └── 7z240fb9iatm4yo8knx640v64
+│           │       └── configuration-cache-report.html
+│           ├── ad0idh3b3j0181rn0bt079l87
+│           │   └── 98mc1b473flf4cpk7a6lh6l4s
+│           │       └── configuration-cache-report.html
+│           ├── aeab9f5wljwepx7d9q374mwke
+│           │   └── 8tcfovtphmv1taaa5pwict4b5
+│           │       └── configuration-cache-report.html
+│           ├── arwg01nuig37qffsir6ws82cw
+│           │   ├── 9huzibodn25nzstdjmchci77z
+│           │   │   └── configuration-cache-report.html
+│           │   └── f46zmxgaanpcy252rlkqgo6yv
+│           │       └── configuration-cache-report.html
+│           ├── auwss8kikc8aj9tg4yzxet716
+│           │   ├── 3eu2wn8bo6j2e8gq02g8tvpsp
+│           │   │   └── configuration-cache-report.html
+│           │   └── bsb9h9twhxh30tyjl1de0tgew
+│           │       └── configuration-cache-report.html
+│           ├── b5a9t96irs25chk9gjb7sni2c
+│           │   └── esp5owor5wf7zwb20sywjv9jr
+│           │       └── configuration-cache-report.html
+│           ├── cbngny7vmeq10ks1esuvg880b
+│           │   ├── 5bx5gf06nvgey82bz9xj8nua8
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 5dku8b3kld0hg2fwmeiyv1yxg
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 5ns1tbolp6ass9fvb9hncqbs7
+│           │   │   └── configuration-cache-report.html
+│           │   ├── 6rulkv7w11hrp5tfv1sipn0ay
+│           │   │   └── configuration-cache-report.html
+│           │   ├── bj91ldw1r10xk665yi5tr5eby
+│           │   │   └── configuration-cache-report.html
+│           │   ├── cvku1g6ohpf4yx1k392711fn0
+│           │   │   └── configuration-cache-report.html
+│           │   └── yofg468u2u6jrs4ou1hx85fe
+│           │       └── configuration-cache-report.html
+│           ├── cvrmhdce5uwklef94x6jlym9h
+│           │   ├── 53nqld0w0v68hjgcmkj3rg033
+│           │   │   └── configuration-cache-report.html
+│           │   └── dqlvpdv3h6siwg1eo77n33r9k
+│           │       └── configuration-cache-report.html
+│           ├── e0yyhhonrmoj9owzp7adz1ncb
+│           │   ├── bu3ctd520lcgpmtki8xjhe83u
+│           │   │   └── configuration-cache-report.html
+│           │   ├── cn677phb307dvr8ev3gb7budh
+│           │   │   └── configuration-cache-report.html
+│           │   └── cqvw58xkvhnmcjjdng6yirx9l
+│           │       └── configuration-cache-report.html
+│           ├── e4e065mcns51wkms4wsgo8ea5
+│           │   └── 6re86te5d00jwj2p5xn8z6jiz
+│           │       └── configuration-cache-report.html
+│           ├── e76x6fw23itothvu64bzt0hjl
+│           │   ├── azy673v1ifapd9sa1i6uaycrb
+│           │   │   └── configuration-cache-report.html
+│           │   └── c1e9evzvogo87y661fssxzzg5
+│           │       └── configuration-cache-report.html
+│           ├── e78w6wqgtrevpia00sfr7dxk7
+│           │   └── 317b9pe3m6mzsz1a6s6z83ric
+│           │       └── configuration-cache-report.html
+│           ├── ee4qwtpj4nn3zbspsvclroehk
+│           │   └── ay6hby9uewllztj8k3i5edh39
+│           │       └── configuration-cache-report.html
+│           ├── ee77v6guh4gxs0hkqd7pqmhap
+│           │   └── 71tb8y5qlq16nvfh0iiqz0544
+│           │       └── configuration-cache-report.html
+│           └── eelzgr7457r03a3bk7zqan0mr
+│               ├── 1d9n11meoevp4hsk78g3hgzm6
+│               │   └── configuration-cache-report.html
+│               └── awqi2enbnww4nhm9rhyr9y52w
+│                   └── configuration-cache-report.html
+├── build.gradle.kts
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── key
+├── local.properties
+├── private_key.pepk
+└── settings.gradle.kts
+
+171 directories, 194 files, 178.1 MB
