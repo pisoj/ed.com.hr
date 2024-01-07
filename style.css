@@ -14,8 +14,34 @@ a {
   color: var(--brand-light);
 }
 
+.play-store {
+  position: relative;
+}
+.play-store::after {
+  content: "END OF LIFE";
+  position: absolute;
+  top: 2.25em;
+  left: -10%;
+  width: 120%;
+  height: 1.5em;
+  background-color: hsla(0, 100%, 50%, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-store::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: not-allowed;
+}
 .play-store img {
   width: 15rem;
+  filter: brightness(.5) blur(1px);
 }
 
 .transition {
