@@ -39,7 +39,7 @@ a {
   cursor: not-allowed;
 }
 .play-store img {
-  width: 15rem;
+  width: 15rem !important;
   margin-left: 2.5rem;
   filter: brightness(0.5) blur(1px);
 }
@@ -70,6 +70,15 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.article.alternative {
+  background-image: linear-gradient(
+      hsla(223, 68%, 50%, 0.4),
+      hsla(223, 68%, 50%, 0.5)
+    ),
+    url("blob.svg");
+    background-size: min(200%, 75rem) 200vh;
+    background-position: center;
+}
 .article > div {
   max-width: 120ch;
   padding: 0 2rem;
@@ -83,14 +92,14 @@ header {
 .header h1 {
   font-size: 3em;
 }
-header h1 ~ p {
+.header h1 ~ p {
   font-size: 1.3em;
 }
 .header > div {
   margin-top: 5rem;
   max-width: 30rem;
 }
-header img {
+.header img {
   border-radius: 1rem;
   width: 20rem;
 }
