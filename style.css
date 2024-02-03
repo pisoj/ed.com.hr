@@ -76,7 +76,7 @@ header {
       hsla(223, 68%, 50%, 0.5)
     ),
     url("blob.svg");
-    background-size: min(200%, 75rem) 150vh;
+    background-size: min(200%, 75rem) 250vh;
     background-position: center;
 }
 .article > div {
