@@ -80,12 +80,12 @@ a {
   overflow: hidden;
 }
 
-.transition>svg {
+.transition > svg {
   width: 100%;
 }
 
 header {
-  background-color: var(--twist);
+  background: url('/polygon-scatter.svg');
   color: white;
 }
 
@@ -100,13 +100,9 @@ header {
   font-size: 3em;
 }
 
-.header>div {
-  margin-top: 5rem;
-  max-width: 30rem;
-}
-
-.header .screenshoots img {
-  width: 20rem !important;
+.header > div {
+  margin-top: 4rem;
+  max-width: 60ch;
 }
 
 .title {
@@ -117,7 +113,7 @@ header {
   font-size: 1.3em;
 }
 
-.title>* {
+.title > * {
   max-width: 50rem;
 }
 
@@ -130,6 +126,9 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
+}
+footer > p {
+  text-align: center;
 }
 
 .screenshoots {
@@ -149,7 +148,7 @@ footer {
       var(--brand) 100%);
 }
 
-.screenshoots>.animate {
+.screenshoots > .animate {
   display: flex;
   animation: scroll 20s linear 1s backwards infinite;
 }
@@ -160,10 +159,14 @@ footer {
   }
 
   100% {
-    transform: translateX(-150rem);
+    transform: translateX(calc((min(20rem, 70vw) + 10vw) * -5));
   }
 }
 
 .screenshoots img {
-  width: 30rem;
+  width: 20rem;
+}
+.screenshoots .animate > img {
+  width: min(20rem, 70vw);
+  margin-right: 10vw;
 }
