@@ -10,10 +10,18 @@
 details {
   width: 100%;
 }
-
 summary {
   cursor: pointer;
 }
+
+::backdrop {
+  background-color: black;
+  opacity: 0.4;
+}
+dialog {
+  max-width: 50ch;
+}
+
 
 .disabled {
   filter: brightness(.6);
@@ -36,6 +44,7 @@ summary {
   font-weight: bold;
   margin-bottom: 0.5rem;
   min-width: 10rem;
+  cursor: pointer;
 }
 
 .download-button-text::before {
@@ -51,6 +60,7 @@ summary {
 
 .download-button > img, .download-button > svg {
   max-width: 3rem;
+  max-height: 2.5rem;
 }
 .download-button > svg {
   fill: white;
