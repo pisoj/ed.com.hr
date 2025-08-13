@@ -10,6 +10,7 @@
 .download-button {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   padding: 10px 20px;
   background-color: #000;
   border-color: #b5b5b4;
@@ -36,8 +37,7 @@
 }
 
 .download-button > img {
-  max-width: 3em;
-  margin-right: 0.5rem;
+  max-width: 3rem;
 }
 
 body {
