@@ -7,6 +7,9 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+details {
+  width: 100%;
+}
 summary {
   cursor: pointer;
 }
