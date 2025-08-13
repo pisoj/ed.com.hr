@@ -85,7 +85,7 @@ a {
 }
 
 header {
-  background: url('/polygon-scatter.svg');
+  background: center / cover no-repeat url('/polygon-scatter.svg');
   color: white;
 }
 
