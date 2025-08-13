@@ -49,8 +49,11 @@ summary {
   margin-bottom: 0;
 }
 
-.download-button>img {
+.download-button > img, .download-button > svg {
   max-width: 3rem;
+}
+.download-button > svg {
+  fill: white;
 }
 
 body {
