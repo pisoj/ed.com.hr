@@ -8,7 +8,7 @@
 }
 
 .download-button {
-  display: block;
+  display: flex;
   align-items: center;
   padding: 10px 20px;
   background-color: #000;
@@ -23,19 +23,21 @@
   margin-bottom: 0.5rem;
   min-width: 10rem;
 }
-.download-button::before {
+
+.download-button-text::before {
   content: "PREUZMITE";
   font-size: 0.75em;
   font-weight: normal;
   display: block;
 }
 
-.download-button:last-child {
+.download-button-text:last-child {
   margin-bottom: 0;
 }
 
 .download-button > img {
-  max-height: 100%;
+  max-width: 3em;
+  margin-right: 0.5rem;
 }
 
 body {
@@ -69,8 +71,7 @@ header {
   margin-top: 5rem;
   max-width: 30rem;
 }
-.header img {
-  border-radius: 1rem;
+.header .screenshoots img {
   width: 20rem !important;
 }
 .title {
@@ -126,7 +127,4 @@ footer {
 }
 .screenshoots img {
   width: 30rem;
-}
-.play-store img {
-  width: 15rem !important;
 }
