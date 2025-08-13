@@ -10,8 +10,14 @@
 details {
   width: 100%;
 }
+
 summary {
   cursor: pointer;
+}
+
+.disabled {
+  filter: brightness(.6);
+  cursor: not-allowed;
 }
 
 .download-button {
@@ -43,13 +49,14 @@ summary {
   margin-bottom: 0;
 }
 
-.download-button > img {
+.download-button>img {
   max-width: 3rem;
 }
 
 body {
   margin: 0;
 }
+
 a {
   color: var(--brand-light);
 }
@@ -57,7 +64,8 @@ a {
 .transition {
   overflow: hidden;
 }
-.transition > svg {
+
+.transition>svg {
   width: 100%;
 }
 
@@ -65,22 +73,27 @@ header {
   background-color: var(--twist);
   color: white;
 }
+
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 2rem;
 }
+
 .header h1 {
   font-size: 3em;
 }
-.header > div {
+
+.header>div {
   margin-top: 5rem;
   max-width: 30rem;
 }
+
 .header .screenshoots img {
   width: 20rem !important;
 }
+
 .title {
   display: flex;
   flex-direction: column;
@@ -88,7 +101,8 @@ header {
   align-items: center;
   font-size: 1.3em;
 }
-.title > * {
+
+.title>* {
   max-width: 50rem;
 }
 
@@ -108,30 +122,33 @@ footer {
   overflow: hidden;
   background-color: var(--brand);
 }
+
 .screenshoots::after {
   content: "";
   position: absolute;
   bottom: 0;
   height: 10rem;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    var(--brand-transparent) 0%,
-    var(--brand) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--brand-transparent) 0%,
+      var(--brand) 100%);
 }
-.screenshoots > .animate {
+
+.screenshoots>.animate {
   display: flex;
   animation: scroll 20s linear 1s backwards infinite;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-150rem);
   }
 }
+
 .screenshoots img {
   width: 30rem;
 }
