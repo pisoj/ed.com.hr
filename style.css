@@ -85,7 +85,7 @@ a {
 }
 
 header {
-  background: center / cover no-repeat url('/polygon-scatter.svg');
+  background: var(--twist);
   color: white;
 }
 
