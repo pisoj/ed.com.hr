@@ -15,19 +15,19 @@
         <div>
           <h1>eDnevnik Super</h1>
           <h2>
-            Praćenje novih ocjena na svakom uređaju posebno!
+            Dodajte si ocjenu i vidite kako će utjecati na prosjek!
           </h2>
           <p>
-            <strong>Bez obzira tko prvi otvori eDnevnik</strong>, nove će ocjene biti označene kao nove na svim
-            uređajima.
+            Za svaki predmet možete dodati broj ocjena po želji kako biste vidjeli kako će se prosjek mijenjati kada bi
+            ih stvarno dobili.
           </p>
           <p>
-            Zanima Vas koje ste nove ocjene dobili jučer? - Pregledajte <strong>povijest novih ocjena</strong> za svaki
-            dan kada
-            ste otvorili eDnevnik i vidjeli novu ocjenu.
+            Također, <strong>bez obzira tko prvi otvori eDnevnik</strong>, nove
+            će ocjene biti označene kao nove na svim
+            uređajima.
           </p>
         </div>
-        <div class="play-store" style="display: flex; justify-content: center; flex-wrap: wrap; align-items: center">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; align-items: center; gap: 1rem;">
           <a href="https://github.com/pisoj/lfs/releases/download/v4.3.2/eDnevnik_Super_v4.3.2-LTS.apk"
             class="download-button">
             <img src="img/andorid.webp">
@@ -35,7 +35,7 @@
               Android
             </div>
           </a>
-          <div style="margin-left: 1rem">
+          <div>
             <a class="download-button disabled"
               onclick="window.appleDisclaimer = document.getElementById('apple-disclaimer'); appleDisclaimer.showModal();">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 1000" xml:space="preserve" width="814"
@@ -55,19 +55,22 @@
             </dialog>
           </div>
         </div>
-        <p>Najnovija verzija: v4.3.2 LTS - <a
-            onclick="window.changelog = document.getElementById('changelog'); changelog.showModal();">changelog</a></p>
+        <p>Najnovija verzija: v4.3.2 LTS - <u><a
+              onclick="window.changelog = document.getElementById('changelog'); changelog.showModal();">changelog</a></u>
+        </p>
         <dialog id="changelog">
-          <b>Napomena:</b> Ovo je <b>LTS</b> - <i>Long term support</i> verzija što znači da je <b>izrazito
-            stabilna</b>. Izašla je <b>15.10.2024.</b>
-          Aplikacija u ovom stanju i više nego zadovoljava moje vlastite potrebe tako da ju nisam nadograđivao od
-          tada.<br>
-          <u>Kvalitetan software ne zahtjeva konstantne nadogradnje!</u><br><br>
+          <p>
+            <b>Napomena:</b> Ovo je <b>LTS</b> - <i>Long term support</i> verzija što znači da je <b>izrazito
+              stabilna</b>. Izašla je <b>15.10.2024.</b>
+            Aplikacija u ovom stanju i više nego zadovoljava moje vlastite potrebe tako da ju nisam nadograđivao od
+            tada.<br>
+            <strong><u>Kvalitetan software ne zahtjeva konstantne nadogradnje!</u></strong><br><br>
 
-          <br><b><u>[ Nove značajke ]</u></b><br>• Prikaži izostanke u obliku kalendara<br>• Automatski prikaži sve
-          ispite ako nema nadolazećih<br>• Redizajn kartice izostanka<br>• Prikaži ispite u kalendaru<br><br><b><u>[
-              Ispravci pogrešaka ]</u></b><br>• Process death<br>• Race condition na zaslonu za ocjene<br>• Nema
-          nadolazećih ispita iako ih ima<br>
+            <br><b><u>[ Nove značajke ]</u></b><br>• Prikaži izostanke u obliku kalendara<br>• Automatski prikaži sve
+            ispite ako nema nadolazećih<br>• Redizajn kartice izostanka<br>• Prikaži ispite u kalendaru<br><br><b><u>[
+                Ispravci pogrešaka ]</u></b><br>• Process death<br>• Race condition na zaslonu za ocjene<br>• Nema
+            nadolazećih ispita iako ih ima
+          </p>
           <a class="download-button" onclick="changelog.close();">Zatvori</a>
         </dialog>
         <details>
@@ -92,7 +95,7 @@
       </div>
       <div class="screenshoots">
         <div>
-          <img src="img/old-new-school-grades.png" alt="Spremanje više računa odjednom" />
+          <img src="img/average-simulator.png" alt="Simulator prosjeka ocjena" />
         </div>
       </div>
     </div>
@@ -212,15 +215,13 @@
     </div>
     <footer>
       <h2>Spremni da ulovite školu za rep?</h2>
-      <div class="play-store">
-        <a href="https://github.com/pisoj/lfs/releases/download/v4.3.2/eDnevnik_Super_v4.3.2-LTS.apk"
-          class="download-button">
-          <img src="img/andorid.webp">
-          <div class="download-button-text">
-            Android
-          </div>
-        </a>
-      </div>
+      <a href="https://github.com/pisoj/lfs/releases/download/v4.3.2/eDnevnik_Super_v4.3.2-LTS.apk"
+        class="download-button">
+        <img src="img/andorid.webp">
+        <div class="download-button-text">
+          Android
+        </div>
+      </a>
       <p>Josip Tišljar Mataušić • <a href="mailto:josip.tismat+ed@gmail.com"
           style="color: white">josip.tismat+ed@gmail.com</a></p>
     </footer>
