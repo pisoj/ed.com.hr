@@ -130,6 +130,9 @@ footer {
 footer > p {
   text-align: center;
 }
+footer > a {
+  color: white;
+}
 
 .screenshoots {
   position: relative;
